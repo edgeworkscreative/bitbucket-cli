@@ -43,3 +43,17 @@ $ bitbucket repositories:pullrequests:update NINEJKH/bitbucket-cli 4 < payload.j
 $ bitbucket repositories:pullrequests:update:description NINEJKH/bitbucket-cli 4 "new description (or via STDIN)"
 ```
 
+
+### Issues
+
+#### Get issue
+
+```bash
+$ bitbucket repositories:issues:get NINEJKH/bitbucket-cli 4
+```
+
+#### Create issue
+
+```bash
+$ bitbucket repositories:issues:create NINEJKH/bitbucket-cli "My minor task" "content of the issue" task minor
+```

@@ -17,6 +17,8 @@ use App\Commands\Repositories\PullRequests\GetCommand;
 use App\Commands\Repositories\PullRequests\GetDescriptionCommand;
 use App\Commands\Repositories\PullRequests\UpdateCommand;
 use App\Commands\Repositories\PullRequests\UpdateDescriptionCommand;
+use App\Commands\Repositories\Issues\CreateCommand as CreateIssueCommand;
+use App\Commands\Repositories\Issues\GetCommand as GetIssueCommand;
 use Symfony\Component\Console\Application;
 
 if (file_exists(__DIR__ . '/version.txt')) {
@@ -30,4 +32,6 @@ $app->add(new GetCommand);
 $app->add(new GetDescriptionCommand);
 $app->add(new UpdateCommand);
 $app->add(new UpdateDescriptionCommand);
+$app->add(new CreateIssueCommand);
+$app->add(new GetIssueCommand);
 $app->run();
